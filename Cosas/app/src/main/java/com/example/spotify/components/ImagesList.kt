@@ -1,7 +1,6 @@
 package com.example.spotify.components
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
@@ -18,25 +17,27 @@ import com.example.spotify.R
 
 
 @Composable
-fun ImagesList() {
-    Box() {
+fun ImagesList(modifier: Modifier) {
+    Box(
+        modifier = Modifier.padding(10.dp)
+    ) {
         Row(
             modifier = Modifier,
             horizontalArrangement = Arrangement.Center,
             verticalAlignment = Alignment.Bottom
         ) {
             Image(
-                painter = painterResource(id = R.drawable.imagen3),
+                painter = painterResource(id = R.drawable.dog1),
                 contentDescription = "Imagen bonita",
                 modifier = Modifier.height(height = 50.dp).width(width = 50.dp)
             )
             Image(
-                painter = painterResource(id = R.drawable.imagen2),
+                painter = painterResource(id = R.drawable.dog2),
                 contentDescription = "Imagen bonita",
                 modifier = Modifier.height(height = 50.dp).width(width = 50.dp)
             )
             Image(
-                painter = painterResource(id = R.drawable.imagen1),
+                painter = painterResource(id = R.drawable.dog3),
                 contentDescription = "Imagen bonita",
                 modifier = Modifier.height(height = 50.dp).width(width = 50.dp)
             )
@@ -47,5 +48,5 @@ fun ImagesList() {
 @Preview
 @Composable
 fun ImageListPreview(){
-    ImagesList()
+    ImagesList(modifier = Modifier)
 }
