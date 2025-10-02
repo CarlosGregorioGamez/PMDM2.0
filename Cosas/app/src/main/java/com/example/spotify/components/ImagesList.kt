@@ -45,6 +45,8 @@ fun ImagesList(modifier: Modifier) {
     }
 }
 
+//Posiblemente hacer una lista de imagenes, y añadirle aquí el scroll en horizontal
+
 @Preview
 @Composable
 fun ImageListPreview(){
