@@ -62,7 +62,8 @@ class MainActivity : ComponentActivity() {
                     }
                 ) { innerPadding ->
                     //Posiblemente crear lazycolumn para hacerle scroll a todos
-                    //Dudas acerca de como añadir las clases si llega a ser necesario una lista para hacer esta parte
+                    //Dudas acerca de como añadir las clases si llega a ser necesario una lista
+                    //Para hacer esta parte
                     Column(
                         modifier = Modifier.fillMaxSize(),
                         verticalArrangement = Arrangement.Center,
